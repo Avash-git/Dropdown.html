@@ -1,0 +1,75 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+	body{
+	background-image: url(2.jpg);
+	background-size: cover;
+	
+}
+h1{
+	color: white; text-align: center;
+}
+
+.menu-bar{
+	background-color: darkslateblue;
+	text-align: center;
+}
+.menu-bar ul{
+	display: inline-flex; list-style: none; color: white;
+}
+.menu-bar ul li{
+	width: 120px; margin: 15px; padding: 15px;
+}
+.menu-bar ul li a{
+	text-decoration: none;
+	color: white;
+}
+.active, .menu-bar ul li:hover
+{
+	background-color: purple;
+	border-radius: 3px;
+}
+.menu-bar .fa{
+	margin: 5px;
+}
+.sub-menu1{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu1 {
+	display: block; position: absolute; background-color: darkslateblue; margin-top: 15px; margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul
+{
+	display: block; margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li
+{
+width: 150px; padding: 10px; border-bottom: 1px dotted #fff; background: transparent; text-align: left; border-radius: 0;
+} 
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+	color:  #22EEB5;
+}
+.sub-menu2{
+	display: none;
+}
+.hover-me:hover .sub-menu2{
+	display:block;
+	position: absolute;
+	margin-top: -45px;
+	margin-left: 140px;
+	background-color: darkslateblue;
+
+}
+.sub-menu3{
+	display: block;
+
+}
+.menu-bar ul li:hover .sub-menu3 ul {
+	display: block; position: absolute; background-color: darkslateblue; margin-top: 10px; margin-left: 20px;
+}
